@@ -1,0 +1,19 @@
+.fp-right ul li {
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 50%;
+  width: 13px;
+  height: 13px;
+  display: block;
+  position: relative;
+}
+
+.fp-right .active {
+  background-color: #f78b1f;
+  border-radius: 50%;
+}
+
+#fp-nav ul li a span {
+  position: relative;
+  display: none;
+}

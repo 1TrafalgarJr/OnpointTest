@@ -1,0 +1,115 @@
+.point {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.point::before {
+  content: "";
+  position: absolute;
+  background-image: radial-gradient(circle at center, #de771b, #d74729);
+  border-radius: 50%;
+  animation: circle-bg 4s ease-out infinite;
+}
+
+.point::after {
+  content: "";
+  position: absolute;
+  background-image: radial-gradient(circle at center, transparent 66%, #d74729 68%, #de771b 100%);
+  border-radius: 50%;
+  animation: circle 4s ease-out infinite;
+}
+
+.point__1::before,
+.point__1::after {
+  content: "";
+  animation-delay: 1s;
+}
+
+.point__2::before,
+.point__2::after {
+  content: "";
+  animation-delay: 2s;
+}
+
+.point__3::before,
+.point__3::after {
+  content: "";
+  animation-delay: 3s;
+}
+
+.point__4::before,
+.point__4::after {
+  content: "";
+  animation-delay: 4s;
+}
+
+@keyframes circle-bg {
+  0% {
+    top: 25px;
+    left: 25px;
+    right: 25px;
+    bottom: 25px;
+    opacity: 0.8;
+  }
+
+  75% {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.1;
+  }
+
+  85% {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.1;
+  }
+
+  100% {
+    top: 0.5px;
+    left: 0.5px;
+    right: 0.5px;
+    bottom: 0.5px;
+    opacity: 0;
+  }
+}
+
+@keyframes circle {
+  0% {
+    top: 25px;
+    left: 25px;
+    right: 25px;
+    bottom: 25px;
+    opacity: .2;
+  }
+
+  75% {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+  }
+
+  85% {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+  }
+
+  100% {
+    top: 0.5px;
+    left: 0.5px;
+    right: 0.5px;
+    bottom: 0.5px;
+    opacity: 0;
+  }
+}
